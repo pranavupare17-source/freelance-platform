@@ -1,0 +1,162 @@
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+position:relative;
+overflow:hidden;
+}
+
+/* VIDEO */
+
+.hero-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+/* DARK OVERLAY */
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+z-index:-1;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+max-width:1400px;
+margin:0 auto;
+padding:0 20px;
+z-index:2;
+color:white;
+}
+
+/* TITLE */
+
+.hero h1{
+font-family: 'Bebas Neue', sans-serif;
+font-size:90px;
+letter-spacing:2px;
+line-height:1.1;
+margin-bottom:30px;
+}
+
+/* SEARCH BAR */
+
+.search-container{
+display:flex;
+width:600px;
+background:white;
+border-radius:8px;
+overflow:hidden;
+margin-bottom:25px;
+}
+
+.search-input{
+flex:1;
+padding:16px;
+border:none;
+font-size:16px;
+outline:none;
+}
+
+.search-btn {
+  width: 60px;
+  height: 50px;
+  background-color: #1dbf73;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-btn:hover {
+  background-color: #19a463;
+  transform: scale(1.05) rotate(3deg);
+}
+
+.search-btn:active {
+  transform: scale(0.9) rotate(-3deg);
+  background-color: #14834f;
+}
+
+/* CATEGORY BUTTONS */
+
+.categories{
+display:flex;
+gap:15px;
+margin-bottom:40px;
+flex-wrap:wrap;
+}
+
+.categories span {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: transparent;
+  display: inline-block;
+  transition: all 0.25s ease-out;
+}
+
+.categories span:hover {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.categories span:active {
+  transform: translateX(10px) scale(0.98);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* TRUSTED SECTION */
+
+.trusted{
+display:flex;
+align-items:center;
+gap:40px;
+margin-top:20px;
+}
+
+/* TEXT */
+
+.trusted p{
+font-size:16px;
+opacity:0.9;
+}
+
+/* DEFAULT LOGOS */
+
+.trusted img{
+height:24px;
+width:auto;
+filter:brightness(0) invert(1);
+opacity:0.8;
+}
+
+/* VIT LOGO BIGGER */
+
+.trusted img.vit-logo{
+height:70px;
+width:auto;
+filter:none;
+opacity:1;
+}

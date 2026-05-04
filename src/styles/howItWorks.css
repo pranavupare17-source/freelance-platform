@@ -1,0 +1,151 @@
+.how-it-works-section {
+  padding: 80px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.how-it-works-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0 40px;
+}
+
+.how-it-works-header h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #222325;
+  margin: 0;
+}
+
+.hw-toggle-container {
+  display: flex;
+  background-color: white;
+  border: 1px solid #222325;
+  border-radius: 40px;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.hw-toggle-btn {
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  color: #222325;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hw-toggle-btn.active {
+  background-color: #222325;
+  color: white;
+}
+
+.hw-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 40px;
+}
+
+.hw-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.hw-card-media {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background-color: #f7f7f7;
+  margin-bottom: 20px;
+}
+
+.hw-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hw-card-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222325;
+  padding-left: 5px;
+}
+
+/* Video Mockup Styling */
+.card-video-mockup {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.highlight-text {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 8px;
+}
+
+.green-glow {
+  position: relative;
+}
+
+.green-glow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: #1ed760;
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.pause-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .hw-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .how-it-works-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}

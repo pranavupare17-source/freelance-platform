@@ -1,0 +1,134 @@
+.pay-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pay-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+
+.pay-wrapper {
+  background: white;
+  width: 900px;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid #e4e5e7;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.pay-left {
+  flex: 2;
+  padding: 40px;
+  border-right: 1px solid #e4e5e7;
+}
+
+.pay-left h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #222325;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #404145;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b5b6ba;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #222325;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.pay-btn {
+  background-color: #1dbf73;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.pay-btn:hover {
+  background-color: #19a463;
+}
+
+.pay-right {
+  flex: 1;
+  padding: 40px;
+  background-color: #fafafa;
+}
+
+.order-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-summary h3 {
+  margin-top: 0;
+  color: #222325;
+  margin-bottom: 10px;
+}
+
+.summary-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  color: #62646a;
+  font-size: 15px;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222325;
+  padding-top: 15px;
+  border-top: 1px solid #e4e5e7;
+  margin-top: 5px;
+}

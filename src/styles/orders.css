@@ -1,0 +1,126 @@
+.orders-page {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfcfc;
+}
+
+.orders-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  flex: 1;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.orders-header h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 32px;
+  color: #222325;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border: 1px solid #e1e4e8;
+}
+
+.orders-table th {
+  background: #f9fafb;
+  color: #74767e;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+.orders-table td {
+  padding: 20px;
+  border-bottom: 1px solid #e1e4e8;
+  color: #404145;
+  vertical-align: middle;
+}
+
+.orders-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.orders-table tbody tr {
+  transition: 0.2s;
+}
+
+.orders-table tbody tr:hover {
+  background: #fdfdfd;
+}
+
+.order-img-cell img {
+  width: 80px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #f5f5f5;
+}
+
+.order-title {
+  font-weight: 500;
+  font-size: 15px;
+  color: #222325;
+}
+
+.order-price {
+  font-weight: 600;
+  color: #1a9c5c;
+}
+
+.msg-btn {
+  background: #1dbf73;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.msg-btn:hover {
+  background: #19a463;
+  box-shadow: 0 4px 10px rgba(29,191,115,0.2);
+}
+
+.empty-orders {
+  text-align: center;
+  padding: 100px 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px dashed #cfd3d8;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.empty-orders h2 {
+  font-family: 'Work Sans', sans-serif;
+  color: #222325;
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+.empty-orders p {
+  color: #74767e;
+  margin-bottom: 30px;
+  font-size: 16px;
+}

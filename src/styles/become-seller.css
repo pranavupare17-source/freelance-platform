@@ -1,0 +1,123 @@
+.seller-landing {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.seller-hero {
+  background: linear-gradient(135deg, #0a0f1d 0%, #172138 100%);
+  color: white;
+  padding: 120px 20px 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.seller-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle at top right, rgba(29, 191, 115, 0.15), transparent 50%);
+  pointer-events: none;
+}
+
+.hero-capsule {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.seller-hero h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 64px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.seller-hero p {
+  font-size: 20px;
+  color: #aeb4c6;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+.primary-cta {
+  background: #1dbf73;
+  color: white;
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+  box-shadow: 0 10px 20px rgba(29, 191, 115, 0.2);
+}
+
+.primary-cta:hover {
+  background: #159357;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(29, 191, 115, 0.3);
+}
+
+.features-section {
+  padding: 100px 20px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+  color: #111;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  flex: 1;
+  min-width: 300px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+  border: 1px solid #eee;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.feature-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.6;
+}

@@ -1,0 +1,45 @@
+.services {
+  position: relative;
+  padding: 50px;
+  background: #f8f9fa;
+}
+
+.services h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.services-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* 🔥 Scroll Buttons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.scroll-btn.left {
+  left: 10px;
+}
+
+.scroll-btn.right {
+  right: 10px;
+}
