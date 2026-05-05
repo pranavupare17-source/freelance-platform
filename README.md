@@ -17,7 +17,10 @@ post projects and freelancers can bid on them.
 - Dashboard for clients and freelancers
 
 ## 📸 Screenshots
-[Add 2-3 screenshots here]
+<img width="1018" height="566" alt="3" src="https://github.com/user-attachments/assets/a09c8f40-c3da-49db-ba79-9031fc3d4622" />
+<img width="1863" height="751" alt="2" src="https://github.com/user-attachments/assets/3a5ee910-0e0d-4d8b-b411-0a515a8f34c0" />
+<img width="1893" height="862" alt="1" src="https://github.com/user-attachments/assets/64c9f563-6d95-4722-9958-6cd2709f959c" />
+
 
 ## 🚀 How to Run Locally
 ```bash
